@@ -3,40 +3,19 @@
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-  <title>TodoMVC</title>
+  <title>Todo by Evan</title>
   <link rel="stylesheet" href="base.css">
   </head>
   <body>
   <section id="todoapp">
     <header id="header">
-      <h1>Evan's todos</h1>
+      <h1>todos</h1>
       <input id="new-todo" placeholder="What needs to be done?" autofocus="">
     </header>
     <section id="main" style="display: block;">
       <input id="toggle-all" type="checkbox">
       <label for="toggle-all">Mark all as complete</label>
       <ul id="todo-list">
-        <li data-id="1399216626359" class="">
-          <div class="view">
-            <input class="toggle" type="checkbox">
-            <label>Include jQuery on the page</label>
-            <button class="destroy"></button>
-          </div>
-        </li>
-        <li data-id="1399216659638" class="">
-          <div class="view">
-            <input class="toggle" type="checkbox">
-            <label>Optimize</label>
-            <button class="destroy"></button>
-          </div>
-        </li>
-        <li data-id="1399216664438" class="">
-          <div class="view">
-            <input class="toggle" type="checkbox">
-            <label>Profit!</label>
-            <button class="destroy"></button>
-          </div>
-        </li>
       </ul>
     </section>
     <footer id="footer" style="display: block;">
@@ -56,9 +35,24 @@
     </footer>
   </section>
   <footer id="info">
-    <p>Double-click to edit a todo</p>
+    <footer>
+      by <a href='http://github.com/etmoore'>Evan Moore</a> for <a href='http://www.frontrange.edu/weblab/' title='WebLab at Front Range Community College' target='_blank'>WebLab</a> 2014
+    </footer>
   </footer>
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <div id='template'>
+
+    <div class='task-row'>
+      <div class='checkbox'>
+        <input type='checkbox' name='check'><label for='check'> </label>
+      </div>
+      <div class='taskbox'>
+        <input value='' type='text'>
+        <div class='delete'>X</div>
+      </div>
+    </div>
+
+  </div>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="app.js"></script>
   </body>
 </html>
